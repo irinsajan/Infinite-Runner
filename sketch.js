@@ -68,19 +68,12 @@ function draw(){
 
     drawSprites();
 
-    if(car !== undefined) {
-        var index = 0;
-        // var posX = 250;
-        // var posY;
+    
+    camera.position.x = car.x;
+    camera.position.y = car.y;
+            
 
-            if(index === 0) {
-            camera.position.x = car.x;
-            camera.position.y = car.y;
-            }
-        
-    }
-
-    if(keyDown(UP_ARROW) && index !== null) {
+    if(keyDown(UP_ARROW)) {
         car.y -= 50;
    }
    
